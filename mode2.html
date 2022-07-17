@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music website</title>
+    <link rel="stylesheet" href="stylee.css">
+    <style>
+        body{
+            background-image: url(https://img.freepik.com/free-photo/abstract-colorful-many-music-note-key-sol-cartoon-style-soft-yellow-minimal-background-3d-rendering_39343-1273.jpg?w=2000);
+            height: 100vh;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img src="logo.png" alt="logo">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <LI><a href="#">ABOUT</a></LI>
+            <li><a href="#">FAVORATE</a></li>
+            <li><a href="https://open.spotify.com/">PLAYLIST</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="left-col">
+            <h1>FEEL <br> MAGIC <br>REEL</h1>
+        </div>
+        <div class="right-col">
+            <p>Click Her to Listen</p>
+            <img src="play.png" id="icon">
+
+        </div>
+
+    </div>
+    <audio id="mysong">
+        <source src="Safari Theme Song Reloaded(MP3_160K).mp3" type="audio/mp3">
+    </audio>
+    <script>
+        var mysong = document.getElementById("mysong")
+        var icon = document.getElementById("icon")
+
+        icon.onclick =function(){
+            if(mysong.paused) {
+                mysong.play();
+                icon.src ="pause.png";
+                               
+            }else{
+                mysong.pause();
+                icon.src ="play.png";
+            }
+        }
+        </script>
+      <br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br><br><br><center><h6>copyright© 2022 ftenterprise</h6></center>
+        
+        </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
